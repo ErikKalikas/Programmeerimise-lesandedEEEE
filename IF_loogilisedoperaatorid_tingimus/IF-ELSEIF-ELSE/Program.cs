@@ -1,4 +1,6 @@
-﻿namespace IF_ELSEIF_ELSE
+﻿using System.Security.Cryptography;
+
+namespace IF_ELSEIF_ELSE
 {
     internal class Program
     {
@@ -38,8 +40,44 @@
             //  kui 2FA kood on pikem kui 6 tähte, ütle sissepääs keelatud, kood on liiga pikk
             //  kui 2FA kood on 6 tähte, siis lase sisse, öeldes "oled sissepääsenud"
             //NB: 2FA kood ei pea matchima eksisteeriva näitega nagu parool.
-            
-            
+
+            Console.WriteLine("pikkust");
+            int pikkust = Convert.ToInt32 (Console.ReadLine());
+            if (pikkust <= 0)
+            {
+                Console.WriteLine("võimatu pikkus");
+            }
+            else if (pikkust == 1)
+            {
+                Console.WriteLine("juntsu");
+            }
+            else if (pikkust == 2)
+            {
+                Console.WriteLine("tavaline kolge");
+            }
+            else if (pikkust >= 2)
+            {
+                Console.WriteLine("hiiglane");
+            }
+            Console.WriteLine("kui vana sa oled");
+            int vanus = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("aastaarvu");
+            int aeg = Convert.ToInt32(Console.ReadLine());
+            int kod = vanus - aeg;
+            if (kod >= 2020 && kod <= 2025)
+            {
+                Console.WriteLine(" kes sulle arvuti juba andis");
+            }
+            else if (kod >= 2015 && kod <= 2019)
+            {
+                Console.WriteLine("skibidi sigmaless");
+            }
+            else if (kod <= 2015 && kod >= 2010)
+            {
+                Console.WriteLine("kas ta tahab saada programmeerijaks (JAH/EI)");
+            }
+            string tahab = Console.ReadLine();
+            if
         }
     }
 }
