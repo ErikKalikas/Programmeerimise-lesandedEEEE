@@ -36,6 +36,101 @@
             //      |   jah     |   ei      |   ei      |   jah     ||  "sul on tööriistad, aga materjali mitte, ma ei oska öelda"
             //      |   ei      |   jah     |   jah     |   ei      ||  "sul on materjal, aga tööriistu mitte, mine k-rautasse"
             //      |  < kõik muud kombinatsoonid tingimustest >    ||  "tühjade kätega ei tee mitte midagi :c"
+            bool pliiatsid;
+            string pliiatsid2;
+            bool paber;
+            string paber2;
+            bool saag;
+            string saag2;
+            bool lauad;
+            string lauad2;
+
+
+            // pliiatsid
+            Console.WriteLine("kas sul on pliat (JAH/EI)?");
+            pliiatsid2 = Console.ReadLine();
+            if (pliiatsid2 == "JAH" || pliiatsid2 == "jah")
+            {
+                Console.WriteLine("sa valisid pliatsid");
+                pliiatsid = true;
+            }
+            else 
+            {
+                Console.WriteLine("mitte pliatsid");
+                pliiatsid = false;
+            }
+            
+            
+            //paber
+            Console.WriteLine("kas sul on paber (JAH/EI)?");
+            paber2 = Console.ReadLine();
+            if (paber2 == "JAH" || paber2 == "jah")
+            {
+                Console.WriteLine("sa valisid pliatsid");
+                paber = true;
+            }
+            else 
+            {
+                Console.WriteLine("mitte pliatsid");
+                paber = false;
+            }
+            
+
+            //saag
+            Console.WriteLine("kas sul on saag (JAH/EI)?");           
+            saag2 = Console.ReadLine();
+            if (saag2 == "JAH" || saag2 == "jah")
+            {
+                Console.WriteLine("sa valisid pliatsid");
+                saag = true;
+            }
+            else 
+            {
+                Console.WriteLine("mitte pliatsid");
+                saag = false;
+            }
+            
+
+            //laud
+            Console.WriteLine("kas sul on lauad (JAH/EI)?");
+            lauad2 = Console.ReadLine();
+            if (lauad2 == "JAH" || lauad2 == "jah")
+            {
+                Console.WriteLine("sa valisid pliatsid");
+                lauad = true;
+            }
+            else 
+            {
+                Console.WriteLine("mitte pliatsid");
+                lauad = false;
+            }
+
+            if (saag == true && lauad == true)
+            {
+                Console.WriteLine("võiksid õppida tisleriks");
+            }
+            else if (pliiatsid == true && paber == true)
+            {
+                Console.WriteLine("võiksid õppida arhitektiks");
+            }
+            else if (pliiatsid == true && paber == true && saag == true && lauad == true)
+            {
+                Console.WriteLine("võiksid õppida arhitektiks ja tisleriks, sul on kõik uksed avatud");
+            }
+            else if (pliiatsid == true && saag == true)
+            {
+                Console.WriteLine("sul on tööriistad, aga materjali mitte, ma ei oska öelda");
+            }
+            else if (paber == true && lauad == true)
+            {
+                Console.WriteLine("sul on materjal, aga tööriistu mitte, mine k-rautasse");
+            }
+            else Console.WriteLine("tühjade kätega ei tee mitte midagi :c");
+
+
+
+
+
         }
     }
 }
