@@ -55,7 +55,7 @@ namespace IF_ELSEIF_ELSE
             {
                 Console.WriteLine("tavaline kolge");
             }
-            else if (pikkust >= 2)
+            else if (pikkust > 2)
             {
                 Console.WriteLine("hiiglane");
             }
@@ -88,10 +88,7 @@ namespace IF_ELSEIF_ELSE
                         Console.WriteLine("kahju");
                         break;
                     }
-                    else
-                    {
-                        continue;
-                    }
+                    
                 }
             }
             while (true)
@@ -101,12 +98,12 @@ namespace IF_ELSEIF_ELSE
                 if (suunakood <= 9999)
                 {
                     Console.WriteLine("1 täht on puudu");
-                    continue;
+                    
                 }
-                else if (suunakood >= 99999)
+                else if (suunakood >= 1000000)
                 {
                     Console.WriteLine("1 täht on üle");
-                    continue;
+                    
                 }
                 else
                 {
@@ -132,23 +129,18 @@ namespace IF_ELSEIF_ELSE
                     if (otsin == "otsin")
                     {
                         Console.WriteLine("loodan et saad varsti tööle c:");
-                        break;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                        
+                    }                               
+                        break;      
                 }
-                else
-                {
-                    continue;
-                }
+                
             }           
 
-            Console.WriteLine("kirjuta oma parool");
-            string parool = Console.ReadLine();            
+                       
             while (true)
             {
+                Console.WriteLine("kirjuta oma parool");
+                string parool = Console.ReadLine();
                 if (parool == "parool")
                 {
                     Console.WriteLine("kirjuta oma 2FA koodi");
@@ -156,12 +148,12 @@ namespace IF_ELSEIF_ELSE
                     if (kood >= 999999)
                     {
                         Console.WriteLine("kood on liiga pikk");
-                        continue;
+                        
                     }
                     else if (kood <= 99999)
                     {
                         Console.WriteLine("kood on liiga lühike");
-                        continue;
+                        
                     }
                     else
                     {
@@ -172,7 +164,7 @@ namespace IF_ELSEIF_ELSE
                 else
                 {
                     Console.WriteLine("sissepääs keelatud");
-                    continue;
+                    
                 }
             }
                

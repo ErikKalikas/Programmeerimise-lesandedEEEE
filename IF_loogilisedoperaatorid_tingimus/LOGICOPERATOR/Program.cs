@@ -105,23 +105,23 @@
                 lauad = false;
             }
 
-            if (saag == true && lauad == true)
+            if (saag && lauad)
             {
                 Console.WriteLine("võiksid õppida tisleriks");
             }
-            else if (pliiatsid == true && paber == true)
+            else if (pliiatsid && paber )
             {
                 Console.WriteLine("võiksid õppida arhitektiks");
             }
-            else if (pliiatsid == true && paber == true && saag == true && lauad == true)
+            else if (pliiatsid && paber && saag && lauad )
             {
                 Console.WriteLine("võiksid õppida arhitektiks ja tisleriks, sul on kõik uksed avatud");
             }
-            else if (pliiatsid == true && saag == true)
+            else if (pliiatsid  && saag )
             {
                 Console.WriteLine("sul on tööriistad, aga materjali mitte, ma ei oska öelda");
             }
-            else if (paber == true && lauad == true)
+            else if (paber  && lauad )
             {
                 Console.WriteLine("sul on materjal, aga tööriistu mitte, mine k-rautasse");
             }
