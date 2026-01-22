@@ -55,6 +55,14 @@
             //esimesse muutujasse omista teise muutuja arvuga liitmistehe, kasutades omistusoperaatorit +=
             //kuva esimene muutuja uuesti välja, muutujas peaks nüüd ~10.25 olema.
 
+            string a = "12";
+            int b = 22;
+            bool c = false;
+            double d = 12.233333333333333333333333333444444444444444444444444444444445555555;
+            float f = 0.13f;
+            var a1 = "34";
+            var a2 = a + a1;
+            Console.WriteLine(a2);
         }
     }
 }

@@ -96,6 +96,33 @@
             // tsükli sisse liida oma täisarvu tüüpi muutujale elemendi sees olev arv juurde
             // peale tsüklit kuva kasutajale oma täisarvu tüüpi muutuja välja
 
+            //for (int i = 0; i > -31; i-=2)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //string result = "";
+            //while (result.Length < 140)
+            //{
+            //    Console.WriteLine("введите текст");
+            //    string text = Console.ReadLine();
+            //    result += text;
+            //}
+            //if (result.Length > 140)
+            //{
+            //    Console.WriteLine("слишком длино");
+            //} 
+            //Console.WriteLine(result);
+
+            Random random = new Random();
+            double co2 = 0;
+
+
+            while (co2 < 40000)
+            {
+               co2 = random.Next(1, 400000) / 10.0;
+                Console.WriteLine(co2);
+            }
+            Console.WriteLine("эвакуация");
         }
     }
 }
