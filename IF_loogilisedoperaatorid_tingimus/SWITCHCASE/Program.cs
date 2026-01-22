@@ -71,7 +71,7 @@ namespace SWITCHCASE
             int auto = Convert.ToInt32(Console.ReadLine());
             while (true)
             {
-                if (auto <= 6) { break; }
+                if (auto <= 6 && auto > 0) { break; }
                 else 
                 {
                     Console.WriteLine("proovi veel");
@@ -101,6 +101,11 @@ namespace SWITCHCASE
                 case 6:
                     Console.WriteLine("OPPA, SEE JUBA LÄHEB");
                     break;
+                default:
+                    Console.WriteLine("vale");
+                    Environment.Exit(0);
+                    break;
+
             }
 
             Console.WriteLine("millises riigis talle meeldiks elada?");
@@ -113,7 +118,7 @@ namespace SWITCHCASE
             int riigis = Convert.ToInt32(Console.ReadLine());
             while (true)
             {
-                if (riigis <= 6) { break; }
+                if (riigis <= 6 && riigis > 0) { break; }
                 else
                 {
                     Console.WriteLine("proovi veel");

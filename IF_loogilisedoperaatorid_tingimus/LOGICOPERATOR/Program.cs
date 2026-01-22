@@ -93,7 +93,7 @@
 
             //laud
             Console.WriteLine("kas sul on lauad (JAH/EI)?");
-            lauad2 = Console.ReadLine();
+            lauad2 = Console.ReadLine().ToLower();
             if (lauad2 == "JAH" || lauad2 == "jah")
             {
                 Console.WriteLine("sa valisid pliatsid");
