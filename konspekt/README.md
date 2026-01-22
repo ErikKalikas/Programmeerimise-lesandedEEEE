@@ -1,0 +1,2 @@
+# Konspekt_Eesnimi_Perekonnanimi_IKTpv25
+minu konspekt

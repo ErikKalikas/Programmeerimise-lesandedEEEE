@@ -1,0 +1,339 @@
+
+
+=================================================
+
+Console.WriteLine("hapukapsas");
+// "Console" -> модуль C#, который мы адресуем. Console помогает выполнять действия в командной строке
+// "." -> показывает, что мы обращаемся к функции или методу внутри модуля Console
+// "WriteLine" -> функция, которую мы используем для вывода текста
+// "()" -> скобки, содержащие информацию, необходимую функции для работы
+// "[]" -> обозначают массивы
+// "{}" -> блок кода, обычно используется после if, else if, namespace или описания функции
+// "hapukapsas" -> параметр, передаваемый функции WriteLine
+// отступы -> помогают разработчику понять, внутри какого блока находится код; это важно и для компилятора
+// ";" -> каждая инструкция заканчивается точкой с запятой
+// "//" -> однострочный комментарий
+// "/* */" -> многострочный комментарий или регион комментариев
+
+-------------------------------------------------
+
+Переменные:
+
+int muutuja = 3;
+// int -> тип данных, показывающий, что переменная хранит целое число
+// muutuja -> имя переменной, используемое для обращения к данным в коде
+// = -> оператор присваивания, задаёт значение переменной
+// 3 -> значение, присваиваемое переменной
+
+-------------------------------------------------
+
+Типы данных:
+
+int        -> целое число
+decimal    -> десятичное число с высокой точностью
+float      -> 32-битное число с плавающей точкой
+double     -> 64-битное число с плавающей точкой
+char       -> один символ, обозначается одинарными кавычками
+string     -> текст или строка, обозначается двойными кавычками
+var        -> локальная переменная с неявно определяемым типом
+const      -> константа, значение которой нельзя изменить
+void       -> тип данных для методов, которые ничего не возвращают
+
+-------------------------------------------------
+
+Массивы:
+
+[] -> массив — это составной тип данных, содержащий несколько элементов одного типа
+Массив имеет фиксированный размер
+Массив может хранить как простые, так и составные типы данных
+Размер массива задаётся при создании
+
+Length -> свойство массива, возвращающее количество элементов
+
+-------------------------------------------------
+
+Списки (List):
+
+List<T> -> список — это составной тип данных, который может динамически изменять размер
+<T>     -> тип элементов, которые хранит список
+Списки могут хранить как простые, так и составные типы данных
+
+Add()      -> добавляет элемент в список
+Count()    -> возвращает количество элементов в списке
+Contains() -> проверяет, содержится ли элемент в списке
+Remove()   -> удаляет элемент из списка
+
+-------------------------------------------------
+
+Арифметические операции:
+
++  -> сложение
+-  -> вычитание
+*  -> умножение
+/  -> деление
+
+-------------------------------------------------
+
+Math (математический модуль):
+
+Math.Pow(a, b) -> возведение числа a в степень b
+Math.Sqrt(a)   -> извлечение квадратного корня
+Math.Round(a)  -> округление числа
+Math.PI        -> математическая константа π
+
+-------------------------------------------------
+
+Приведение типов (Casting):
+
+Автоматическое приведение -> преобразование из меньшего типа в больший
+Ручное приведение         -> преобразование из большего типа в меньший
+
+(float)x  -> приведение к float
+(int)x    -> приведение к int
+(long)x   -> приведение к long
+(char)x   -> приведение к char
+
+-------------------------------------------------
+
+Условные операторы:
+
+if       -> выполняется, если условие истинно
+else if  -> дополнительное условие
+else     -> выполняется, если все предыдущие условия ложны
+
+-------------------------------------------------
+
+Логические операторы:
+
+&& -> логическое И (true, если оба условия истинны)
+|| -> логическое ИЛИ (true, если хотя бы одно условие истинно)
+!  -> логическое НЕ (инвертирует результат)
+
+-------------------------------------------------
+
+Операторы сравнения:
+
+== -> равно
+!= -> не равно
+>  -> больше
+<  -> меньше
+>= -> больше или равно
+<= -> меньше или равно
+
+-------------------------------------------------
+
+Операторы присваивания:
+
+=   -> присваивание
++=  -> прибавить и присвоить
+-=  -> вычесть и присвоить
+*=  -> умножить и присвоить
+/=  -> разделить и присвоить
+++  -> увеличить на 1
+--  -> уменьшить на 1
+
+-------------------------------------------------
+
+Циклы:
+
+do-while -> цикл, который выполняется минимум один раз
+while    -> цикл, выполняющийся пока условие истинно
+for      -> цикл с счётчиком
+foreach  -> перебор элементов коллекции
+
+-------------------------------------------------
+
+switch-case:
+
+switch  -> альтернативная конструкция условий
+case    -> отдельный вариант
+break   -> выход из блока switch
+default -> выполняется, если ни один case не подошёл
+
+-------------------------------------------------
+
+Методы:
+
+Методы — это повторно используемые блоки кода
+Методы могут возвращать значение или не возвращать ничего
+
+public    -> метод доступен в других классах
+private   -> метод доступен только внутри класса
+protected -> метод доступен в классе и наследниках
+internal  -> метод доступен в пределах файла
+static    -> метод принадлежит классу, а не объекту
+
+return -> возвращает значение и завершает выполнение метода
+
+=================================================
+КОНЕЦ ФАЙЛА
+
+
+=================================================
+
+Console.WriteLine("hapukapsas");
+// "Console" -> C# moodul, mida me adresseerime. Console aitab teha tegevusi käsureal
+// "." -> näitab, et me pöördume Console mooduli sees oleva funktsiooni või meetodi poole
+// "WriteLine" -> funktsioon, mida kasutatakse teksti väljastamiseks
+// "()" -> sulud, mis sisaldavad funktsiooni tööks vajalikku infot
+// "[]" -> tähistavad massiive
+// "{}" -> koodiplokk, mida kasutatakse tavaliselt if, else if, namespace või meetodi kirjelduses
+// "hapukapsas" -> parameeter, mis antakse WriteLine funktsioonile
+// taane -> aitab arendajal aru saada, millise koodiploki sees kood asub; oluline ka kompilaatorile
+// ";" -> iga koodilause lõppeb semikooloniga
+// "//" -> üherealine kommentaar
+// "/* */" -> mitmerealine kommentaar või kommentaaride piirkond
+
+-------------------------------------------------
+
+Muutujad:
+
+int muutuja = 3;
+// int -> andmetüüp, mis näitab, et muutuja hoiab täisarvu
+// muutuja -> muutuja nimi, mida kasutatakse andmetele viitamiseks koodis
+// = -> omistusoperaator, määrab muutujale väärtuse
+// 3 -> muutujale omistatav väärtus
+
+-------------------------------------------------
+
+Andmetüübid:
+
+int        -> täisarv
+decimal    -> kõrge täpsusega komakohaga arv
+float      -> 32-bitine ujukomaarv
+double     -> 64-bitine ujukomaarv
+char       -> üksik sümbol, tähistatakse ülakomadega
+string     -> tekst või sõne, tähistatakse jutumärkidega
+var        -> lokaalne muutuja, mille andmetüüp määratakse automaatselt
+const      -> konstant, mille väärtust ei saa muuta
+void       -> andmetüüp meetoditele, mis ei tagasta väärtust
+
+-------------------------------------------------
+
+Massiivid:
+
+[] -> massiiv on komposiitandmetüüp, mis sisaldab mitut sama tüüpi elementi
+Massiivil on fikseeritud suurus
+Massiiv võib sisaldada nii liht- kui ka komposiitandmetüüpe
+Massiivi suurus määratakse loomisel
+
+Length -> massiivi omadus, mis tagastab elementide arvu
+
+-------------------------------------------------
+
+Loendid (List):
+
+List<T> -> loend on komposiitandmetüüp, mille suurus võib dünaamiliselt muutuda
+<T>     -> loendis olevate elementide andmetüüp
+Loendid võivad sisaldada nii liht- kui ka komposiitandmetüüpe
+
+Add()      -> lisab loendisse uue elemendi
+Count()    -> tagastab loendi elementide arvu
+Contains() -> kontrollib, kas element leidub loendis
+Remove()   -> eemaldab elemendi loendist
+
+-------------------------------------------------
+
+Aritmeetilised tehted:
+
++  -> liitmine
+-  -> lahutamine
+*  -> korrutamine
+/  -> jagamine
+
+-------------------------------------------------
+
+Math (matemaatikamoodul):
+
+Math.Pow(a, b) -> arvu a astendamine arvuga b
+Math.Sqrt(a)   -> ruutjuure leidmine
+Math.Round(a)  -> arvu ümardamine
+Math.PI        -> matemaatiline konstant π
+
+-------------------------------------------------
+
+Tüübiteisendus (Casting):
+
+Automaatne teisendus -> teisendus väiksemast andmetüübist suuremasse
+Manuaalne teisendus  -> teisendus suuremast andmetüübist väiksemasse
+
+(float)x  -> teisendamine float-tüüpi
+(int)x    -> teisendamine int-tüüpi
+(long)x   -> teisendamine long-tüüpi
+(char)x   -> teisendamine char-tüüpi
+
+-------------------------------------------------
+
+Tingimusoperaatorid:
+
+if       -> täidetakse siis, kui tingimus on tõene
+else if  -> lisatingimus
+else     -> täidetakse siis, kui kõik eelnevad tingimused on väärad
+
+-------------------------------------------------
+
+Loogilised operaatorid:
+
+&& -> loogiline JA (true, kui mõlemad tingimused on tõesed)
+|| -> loogiline VÕI (true, kui vähemalt üks tingimus on tõene)
+!  -> loogiline EI (pöörab tingimuse tulemuse vastupidiseks)
+
+-------------------------------------------------
+
+Võrdlusoperaatorid:
+
+== -> on võrdne
+!= -> ei ole võrdne
+>  -> on suurem kui
+<  -> on väiksem kui
+>= -> on suurem või võrdne
+<= -> on väiksem või võrdne
+
+-------------------------------------------------
+
+Omistusoperaatorid:
+
+=   -> omistamine
++=  -> liida ja omista
+-=  -> lahuta ja omista
+*=  -> korruta ja omista
+/=  -> jaga ja omista
+++  -> suurenda 1 võrra
+--  -> vähenda 1 võrra
+
+-------------------------------------------------
+
+Tsüklid:
+
+do-while -> tsükkel, mis käivitatakse vähemalt üks kord
+while    -> tsükkel, mis töötab seni, kuni tingimus on tõene
+for      -> loenduriga tsükkel
+foreach  -> kogumi elementide läbikäimine
+
+-------------------------------------------------
+
+switch-case:
+
+switch  -> alternatiivne tingimuskontrolli konstruktsioon
+case    -> üksik haru
+break   -> väljub switch-plokist
+default -> täidetakse siis, kui ükski case ei sobi
+
+-------------------------------------------------
+
+Meetodid:
+
+Meetodid on taaskasutatavad koodiplokid
+Meetodid võivad tagastada väärtuse või mitte midagi
+
+public    -> meetod on kättesaadav teistes klassides
+private   -> meetod on kättesaadav ainult samas klassis
+protected -> meetod on kättesaadav klassis ja päriluses
+internal  -> meetod on kättesaadav faili piires
+static    -> meetod kuulub klassile, mitte objektile
+
+return -> tagastab väärtuse ja lõpetab meetodi täitmise
+
+=================================================
+FAILI LÕPP
+
