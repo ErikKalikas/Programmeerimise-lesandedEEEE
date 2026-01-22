@@ -125,8 +125,8 @@ namespace IF_ELSEIF_ELSE
                 {
                     Console.WriteLine("kahju"); //väljastab teksti: "kahju"
                     Console.WriteLine("miks sa siis töökohta ei otsi?"); //väljastab teksti: "miks sa siis töökohta ei otsi?"
-                    string otsin = Console.ReadLine();
-                    if (otsin == "otsin")  //Kas „tahab“ on võrdne sõnaga „otsin“?
+                    string otsin = Console.ReadLine(); //luuakse string-tüüpi muutuja "otsin", kuhu kirjutatakse vastus Console.ReadLine();
+                    if (otsin == "Otsin")  //Kas „tahab“ on võrdne sõnaga „otsin“?
                     {
                         Console.WriteLine("loodan et saad varsti tööle c:"); //väljastab teksti: "loodan et saad varsti tööle c:"
 
@@ -141,16 +141,16 @@ namespace IF_ELSEIF_ELSE
             {
                 Console.WriteLine("kirjuta oma parool"); //väljastab teksti: "kirjuta oma parool"
                 string parool = Console.ReadLine(); //luuakse string-tüüpi muutuja "parool", kuhu kirjutatakse vastus Console.ReadLine();
-                if (parool == "parool") 
+                if (parool == "Parool") 
                 {
                     Console.WriteLine("kirjuta oma 2FA koodi"); //väljastab teksti: "kirjuta oma 2FA koodi"
-                    int kood = Convert.ToInt32(Console.ReadLine());
-                    if (kood >= 999999) 
+                    int kood = Convert.ToInt32(Console.ReadLine()); //luuakse muutuja tüübiga int "kood", mis teisendab Convert.ToInt32 abil sisestatud vastuse Console.ReadLine() - st.
+                    if (kood >= 999999) //Kas „kood“ on suurem või võrdne 999999-ga?
                     {
                         Console.WriteLine("kood on liiga pikk"); //väljastab teksti: "kood on liiga pikk"
 
                     }
-                    else if (kood <= 99999)
+                    else if (kood <= 99999) //Kas „kood“ on väiksem või võrdne 99999-ga?
                     {
                         Console.WriteLine("kood on liiga lühike"); //väljastab teksti: "kood on liiga lühike"
 
@@ -158,7 +158,7 @@ namespace IF_ELSEIF_ELSE
                     else
                     {
                         Console.WriteLine("oled sissepääsenud"); //väljastab teksti: "oled sissepääsenud"
-                        break;
+                        break; //tsükli väljumine
                     }
                 }
                 else
@@ -167,7 +167,7 @@ namespace IF_ELSEIF_ELSE
 
                 }
 
-                
+                //Lõpp
             }
                
         }
